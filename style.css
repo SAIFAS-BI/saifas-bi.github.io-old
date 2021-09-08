@@ -47,6 +47,10 @@ header .container {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+main .container {
+    padding: 10px 15px;
+}
+
 .products {
     display: flex;
     flex-direction: row;
@@ -65,6 +69,9 @@ header .container {
 
 .product-title {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-title h2 {
@@ -73,9 +80,16 @@ header .container {
     font-size: 21px;
 }
 
+.product-title img {
+    width: 185px;
+    border: 1px #a2a2a2 solid;
+    padding: 2px;
+}
+
 .product-description {
     font-size: 16px;
     text-align: center;
+    margin: 0;
 }
 
 .issue-link-bth {
@@ -85,6 +99,7 @@ header .container {
     background: #0271b6;
     border: 1px solid #d6d6d6;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .issue-link-bth:hover {
@@ -98,9 +113,32 @@ header .container {
 }
 
 /* FOOTER */
+footer {
+    height: 20%;
+}
+
+footer .container {
+    border-top: 1px solid #dadada;
+    padding-top: 10px;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 5px 0;
+    color: #000;
+}
+
+.message a {
+    color: #000;
+}
+
+.message a:hover {
+    color: #757575;
+}
+
 .copyright {
     text-align: center;
     padding: 20px 0;
     color: #757575;
-    border-top: 1px solid #dadada;
 }
